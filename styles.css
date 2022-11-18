@@ -1,0 +1,35 @@
+body,h1,h2,h3,h4,h5 {
+    font-family: "Raleway", sans-serif
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+body {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "main" "footer";
+    grid-template-rows: 1fr 80px;
+}
+main {
+    grid-area: main;
+    background-color: #dddddd;
+}
+footer {
+    background-color: #242424;
+    grid-area: footer;
+    color:lightgray
+}
+.text-card{
+    background-color: #fafafa;
+    color: #2b2b2b;
+}
+h1 {
+    color: darkslategray;
+    text-shadow: 1px 1px slategray;
+}
+h3, h4 {
+    color: darkslategray;
+}
